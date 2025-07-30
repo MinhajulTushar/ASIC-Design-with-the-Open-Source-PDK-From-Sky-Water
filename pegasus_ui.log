@@ -1,0 +1,2 @@
+2025/01/22 01:39:14 INFO (/mnt/cae_storage_sw/eda/cadence/2024-25/RHELx86/PEGASUS_24.10.000/tools.lnx86/bin/cdnsEnvCheck): Oracle Linux Server release 8.10 detected (set environment variable CDS_SKIP_OS_CHECK_ON_STARTUP=1 to suppress).
+2025/01/22 01:39:15 INFO (/mnt/cae_storage_sw/eda/cadence/2024-25/RHELx86/PEGASUS_24.10.000/tools.lnx86/bin/cdnsEnvCheck): Oracle Linux Server release 8.10 detected (set environment variable CDS_SKIP_OS_CHECK_ON_STARTUP=1 to suppress).
