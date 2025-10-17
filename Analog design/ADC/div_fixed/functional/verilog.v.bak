@@ -1,0 +1,10 @@
+//Verilog HDL for "ADC", "div_fixed" "functional"
+
+
+module div_fixed ( Y, VSS, A );
+
+  input A;
+  output Y;
+  inout VSS;
+  buf (Y, A);
+endmodule
