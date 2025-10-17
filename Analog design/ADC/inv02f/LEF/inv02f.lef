@@ -1,0 +1,126 @@
+VERSION 5.8 ;
+BUSBITCHARS "[]" ;
+DIVIDERCHAR "/" ;
+
+PROPERTYDEFINITIONS
+  MACRO CatenaDesignType STRING ;
+  MACRO oaTaper STRING ;
+END PROPERTYDEFINITIONS
+
+MACRO inv01f
+  CLASS CORE ;
+  ORIGIN 0 0 ;
+  FOREIGN inv01f 0 0 ;
+  SIZE 1.38 BY 4.14 ;
+  SYMMETRY X Y ;
+  SITE MACRO ;
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+        RECT 0.95 2.86 1.47 3.55 ;
+        RECT 1.245 0.525 1.47 3.55 ;
+        RECT 0.97 0.525 1.47 0.855 ;
+    END
+  END Y
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER met1 ;
+        RECT 0 -0.2 1.38 0.2 ;
+    END
+  END VSS
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+        RECT 0.39 1.35 0.76 2.2 ;
+    END
+  END A
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER met1 ;
+        RECT 0 3.94 1.38 4.38 ;
+    END
+  END VDD
+  OBS
+    LAYER mcon ;
+      RECT 1 0.61 1.17 0.78 ;
+      RECT 0.98 2.94 1.15 3.11 ;
+      RECT 0.98 3.3 1.15 3.47 ;
+      RECT 0.835 -0.085 1.005 0.085 ;
+      RECT 0.835 4.055 1.005 4.225 ;
+      RECT 0.49 1.545 0.66 1.715 ;
+      RECT 0.375 -0.085 0.545 0.085 ;
+      RECT 0.375 4.055 0.545 4.225 ;
+  END
+  PROPERTY CatenaDesignType "deviceLevel" ;
+  PROPERTY oaTaper "virtuosoDefaultSetup" ;
+END inv01f
+
+MACRO inv02f
+  CLASS CORE ;
+  ORIGIN 0 0 ;
+  FOREIGN inv02f 0 0 ;
+  SIZE 1.38 BY 4.14 ;
+  SYMMETRY X Y ;
+  SITE MACRO ;
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+        RECT 0.61 2.72 1.355 3.41 ;
+        RECT 1.125 0.685 1.355 3.41 ;
+        RECT 0.625 0.685 1.355 1.015 ;
+    END
+  END Y
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER met1 ;
+        RECT 0 3.94 1.38 4.38 ;
+    END
+  END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER met1 ;
+        RECT 0 -0.2 1.38 0.2 ;
+    END
+  END VSS
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+        RECT 0.275 1.35 0.645 2.2 ;
+    END
+  END A
+  OBS
+    LAYER mcon ;
+      RECT 0.835 -0.085 1.005 0.085 ;
+      RECT 0.835 4.055 1.005 4.225 ;
+      RECT 0.655 0.765 0.825 0.935 ;
+      RECT 0.64 2.8 0.81 2.97 ;
+      RECT 0.64 3.16 0.81 3.33 ;
+      RECT 0.375 -0.085 0.545 0.085 ;
+      RECT 0.375 1.545 0.545 1.715 ;
+      RECT 0.375 4.055 0.545 4.225 ;
+  END
+  PROPERTY CatenaDesignType "deviceLevel" ;
+  PROPERTY oaTaper "virtuosoDefaultSetup" ;
+END inv02f
+
+END LIBRARY
