@@ -76,10 +76,14 @@ The final layout passed all SkyWater 130nm design rules (DRC) and maintained com
 
 ## Repository Structure
 /Analog: Virtuoso schematics and layouts for inverters and pre-processing blocks.
+
 /Digital: Verilog source code (therm.v, ADC.v), SDC constraints, and TCL scripts for synthesis.
+
 /Implementation: Generated LEF files, gate-level netlists, and final GDSII.
+
 /Reports: DRC/LVS logs and timing analysis reports.
 
 ## Author
 Md Minhajul Islam Master of Electrical and Microsystems Engineering
+
 Ostbayerische Technische Hochschule Regensburg
